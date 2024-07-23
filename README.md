@@ -26,5 +26,28 @@ Input/Output Layout: <br />
 | SelectButton  | ESP D32       |
 
 ## Libraries and Usage ##
+[Dictionary Library](https://github.com/arkhipenko/Dictionary): <br />
+This library allowed me to store weather statistics in a dictionary data type. Stored in a key-value format. <br />
+[HTTP Client Library:](https://github.com/arduino-libraries/ArduinoHttpClient) <br /> 
+This library was mainly used to access the API and make requests. It allowed the retrieval of the weather statistics. <br />
+[Arduino JSON:](https://arduinojson.org/?utm_source=meta&utm_medium=library.properties) <br />
+This library allowed for the handling of the data retrieved from the weather API. It is needed to access the desired elements. <br /> 
+<br />
+All other libaries (Wifi, Wire, and LiquidCrystal) are apart of the base arduino IDE. More info on them can be found [here](https://www.arduino.cc/reference/en/libraries/).
+
+## API Usage ##
+The API used can be found [here](https://openweathermap.org/api). <br />
+It returns a Json when you request the url. <br />
+You need an account and that requires linking a card, but the API subscription I used is free with 1000 calls per day. <br />
+**Url format**: <br />
+The capitalized sections below depend on what units you want, what your api key is and what location you want.
+https://api.openweathermap.org/data/3.0/onecall?lat=LATITUDEGOESHERE&lon=LONGITUDEGOESHERE&units=DESIREDUNITS&appid=YOURAPIKEY <br />
+See the link above for more info and help with the API. 
+
+## ##
+
+
+
+
 
 
